@@ -1,3 +1,8 @@
 # Grafana Progress Bar Panel
 
-![grafana-progressbar-panel](./img/progressbar-panel-lg.png)
+### Panel 
+![grafana-progressbar-panel](./progressbar_panel.png)
+
+
+### Edit mode 
+![grafana-progressbar-panel-edit-mode](./edit_mode.png)
