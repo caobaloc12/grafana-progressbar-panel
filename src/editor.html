@@ -1,0 +1,56 @@
+<div class="editor-row">
+	<div class="section gf-form-group">
+		<h5 class="section-heading">General</h5>
+		<!-- <div class="gf-form">
+			<span class="gf-form-label width-8">Type</span>
+			<div class="gf-form-select-wrapper max-width-10">
+				<select class="gf-form-input" ng-model="ctrl.panel.pieType" ng-options="t for t in ['pie', 'donut']" ng-change="ctrl.render()"></select>
+			</div>
+		</div> -->
+		<div class="gf-form">
+			<span class="gf-form-label width-8">Unit</span>
+			<div class="gf-form-dropdown-typeahead width-10"
+				 ng-model="ctrl.panel.format"
+				 dropdown-typeahead="ctrl.unitFormats"
+				 dropdown-typeahead-on-select="ctrl.setUnitFormat($subItem)">
+			</div>
+		</div>
+		<div class="gf-form">
+			<span class="gf-form-label width-8">Value</span>
+			<div class="gf-form-select-wrapper max-width-10">
+				<select class="gf-form-input" ng-model="ctrl.panel.valueName" ng-options="v for v in ['min','max','avg', 'current', 'total']" ng-change="ctrl.render()"></select>
+			</div>
+		</div>
+		<div class="gf-form">
+			<span class="gf-form-label width-8">Decimals</span>
+			<input type="text" class="gf-form-input max-width-10" ng-model="ctrl.panel.decimals" ng-change="ctrl.render()">
+		</div>
+	</div>
+
+	<div class="section gf-form-group">
+		<h5 class="section-heading">Legend</h5>
+		<gf-form-switch class="gf-form" label="Show Legend" label-class="width-10" checked="ctrl.panel.legend.show" on-change="ctrl.refresh()"></gf-form-switch>
+		<div class="gf-form">
+			<span class="gf-form-label width-10">Position</span>
+			<div class="gf-form-select-wrapper">
+				<select class="gf-form-input" ng-model="ctrl.panel.legendType" ng-options="t for t in ['aboveGraph', 'onGraph']" ng-change="ctrl.render()"></select>
+			</div>
+		</div>
+
+		<div class="gf-form">
+			<label class="gf-form-label width-10">Colors</label>
+			<div class="gf-form-select-wrapper max-width-10">
+				<select class="gf-form-input" ng-model="sr" ng-options="sr.label for sr in ctrl.data"></select>
+			</div>
+				<spectrum-picker class="gf-form-input width-3" ng-model="ctrl.panel.color" ng-change="ctrl.changeLegendColor(sr, ctrl.panel.color)" ></spectrum-picker>
+		</div>
+		<!-- <div class="gf-form" ng-if="ctrl.panel.legendType === 'On graph'">
+			<span class="gf-form-label width-10">Font size</span>
+			<div class="gf-form-select-wrapper">
+				<select class="gf-form-input" ng-model="ctrl.panel.fontSize" ng-options="s for s in ['50%', '60%', '70%', '80%', '100%', '110%', '120%', '150%', '175%']" ng-change="ctrl.render()"></select>
+			</div>
+		</div>
+		<gf-form-switch class="gf-form" label="Legend Values" label-class="width-10" checked="ctrl.panel.legend.values" on-change="ctrl.refresh()"></gf-form-switch>
+		<gf-form-switch class="gf-form" label="Show Percentage" label-class="width-10" checked="ctrl.panel.legend.percentage" on-change="ctrl.refresh()"></gf-form-switch> -->
+	</div>
+</div>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/module.js"],"names":["ProgressBarCtrl"],"mappings":";;;;;;;;AAAQA,qB,qBAAAA,e;;;2BAGNA,e","file":"module.js","sourcesContent":["import {ProgressBarCtrl} from './progressbar_ctrl';\n\nexport {\n  ProgressBarCtrl as PanelCtrl\n};\n"]}

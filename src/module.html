@@ -1,0 +1,12 @@
+<!-- <div class="graph-wrapper" ng-class="{'graph-legend-rightside': ctrl.panel.legendType == 'Right side'}"> -->
+<div class="graph-wrapper">
+	<div class="graph-canvas-wrapper">
+		<div class="progressbar-panel" ng-repeat="dt in ctrl.data">
+			<div class="progress">
+				<span ng-show="ctrl.panel.legend.show" ng-class="ctrl.panel.legendType">{{dt.label}}</span>
+				<div class="progress-bar" style="width: {{dt.data}}%; background-color: {{dt.color}}" >{{dt.data}}%</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>

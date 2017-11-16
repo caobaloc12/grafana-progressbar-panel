@@ -1,0 +1,28 @@
+{
+  "type": "panel",
+  "name": "Progress Bar",
+  "id": "grafana-progressbar-panel",
+
+  "info": {
+    "description": "Progress bar panel for grafana",
+    "author": {
+      "name": "Grafana Plugins",
+      "url": "https://github.com/locronaldo"
+    },
+    "keywords": ["progressbar", "panel"],
+    "logos": {
+      "small": "src/img/progress-bar.png",
+      "large": "src/img/progress-bar-lg.png"
+    },
+    "links": [
+      {"name": "Project site", "url": "https://github.com/locronaldo/grafana-progressbar-panel"}
+    ],
+    "version": "1.0.0",
+    "created": "2017-10-26"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "3.x 4.x",
+    "plugins": [ ]
+  }
+}
